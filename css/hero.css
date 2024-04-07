@@ -35,6 +35,23 @@ header {
     padding-top: 64px;
   }
 }
+
+.container {
+  padding: 0 20px;
+  margin: 0px auto;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .hero-container {
     background-image: url(../img/mobilestrawberries.jpg),
@@ -84,21 +101,8 @@ header {
       url(../img/bananas@2x.jpg);
   }
 }
-@media screen and (min-width: 1280px) {
-  .header-primary {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    font-size: 64px;
-    line-height: 1;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-  }
-}
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .hero-strawberries {
     width: 120px;
     height: 120px;
@@ -113,23 +117,104 @@ header {
     filter: blur(7px);
     transform: rotate(-20deg);
   }
+} */
+
+.header-primary {
+  margin-bottom: 386px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  max-width: 335px;
+}
+@media screen and (min-width: 768px) {
+  .header-primary {
+    margin-bottom: 513px;
+    font-size: 50px;
+    line-height: 1.08;
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .header-primary {
+    margin-bottom: 483px;
+    font-size: 64px;
+    max-width: 898px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .button-shopnow::after {
+    content: "";
+    background-image: url(../img/mobileyoung.jpg);
+    width: 311px;
+    height: 484px;
+    background-size: contain;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
+@media (max-width: 767px) and (min-device-pivel-ratio: 2),
+  (max-width: 767px) and (min-resolution: 192dpi),
+  (max-width: 767px) and (min-resolution: 2dppx) {
+  .button-shopnow::after {
+    background-image: url(../img/mobileyoung@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .button-shopnow::after {
+    background-image: url(../img/tabletyoung.jpg);
+    width: 452px;
+    height: 702px;
+    bottom: 15px;
+  }
+}
+
+@media (min-width: 768px) and (min-device-pivel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .button-shopnow::after {
+    background-image: url(../img/tabletyoung@2x.jpg);
+  }
 }
 
 @media screen and (min-width: 1280px) {
-  .hero-btn {
-    font-family: "DM Sans", sans-serif;
-    font-weight: 500;
-    font-size: 28px;
-    line-height: 1;
-    letter-spacing: -0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: #ae1332;
-    text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-    transform: rotate(14deg);
-    border-radius: 100%;
-    fill: #fff;
+  .button-shopnow::after {
+    background-image: url(../img/young.jpg);
   }
+}
+
+@media (min-width: 1280px) and (min-device-pivel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
+  .button-shopnow::after {
+    background-image: url(../img/young@2x.jpg);
+  }
+}
+.button-shopnow {
+}
+.text-shopnow {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ae1332;
+  text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
+  transform: rotate(14deg);
+  border-radius: 100%;
+  fill: #fff;
 }
 
 @media screen and (min-width: 1280px) {
