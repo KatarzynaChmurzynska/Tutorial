@@ -202,19 +202,55 @@ header {
   }
 }
 .button-shopnow {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 44px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  font-size: 20px;
+  color: #ae1332;
+  transition: color;
+  cursor: pointer;
+  border: none;
+  border-radius: 500px;
+}
+.button-shopnow:focus,
+.button-shopnow:hover {
+  color: #a4cb66;
+}
+@media screen and (min-width: 768px) {
+  .button-shopnow {
+    width: 114px;
+    height: 114px;
+    font-size: 28px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button-shopnow {
+    margin-bottom: 238px;
+  }
 }
 .text-shopnow {
+  max-width: 55px;
   font-weight: 500;
-  font-size: 28px;
   line-height: 1;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  text-align: center;
-  color: #ae1332;
   text-shadow: 0 4px 70px 0 rgba(0, 0, 0, 0.1);
-  transform: rotate(14deg);
-  border-radius: 100%;
-  fill: #fff;
+  text-align: center;
+  margin: auto;
+  transform: rotate(-14deg);
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .text-shopnow {
+    max-width: 84px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
