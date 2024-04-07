@@ -26,6 +26,64 @@ header {
   height: 50px;
 }
 
+.hero {
+  position: relative;
+  padding-top: 56px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 64px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero-container {
+    background-image: url(../img/mobilestrawberries.jpg),
+      url(../img/mobilebananas.jpg);
+    background-repeat: no-repeat;
+    background-position: top 56px right 20px, top 116px left 13px;
+  }
+}
+@media (max-width: 767px) and (min-device-pivel-ratio: 2),
+  (max-width: 767px) and (min-resolution: 192dpi),
+  (max-width: 767px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../img/mobilestrawberries@2x.jpg),
+      url(../img/mobilebananas@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    background-image: url(../img/tabletstrawberries.jpg),
+      url(../img/tabletbananas.jpg);
+    background-repeat: no-repeat;
+    background-position: top 55px right 37px, top 169px left 27px;
+  }
+}
+@media (min-width: 768px) and (min-device-pivel-ratio: 2),
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../img/tabletstrawberries@2x.jpg),
+      url(../img/tabletbananas@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    background-image: url(../img/strawberries.jpg), url(../img/bananas.jpg);
+    background-repeat: no-repeat;
+    background-position: top 39px right 223px, top 191px left 213px;
+  }
+}
+@media (min-width: 1280px) and (min-device-pivel-ratio: 2),
+  (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../img/strawberries@2x.jpg),
+      url(../img/bananas@2x.jpg);
+  }
+}
 @media screen and (min-width: 1280px) {
   .header-primary {
     font-family: "DM Sans", sans-serif;
