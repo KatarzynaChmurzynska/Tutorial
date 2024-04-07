@@ -1,3 +1,31 @@
+body {
+  width: 1280px;
+  height: 5469px;
+  background: #ae1332;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+header {
+  background-color: white;
+  width: 1280px;
+  height: 50px;
+}
+
 @media screen and (min-width: 1280px) {
   .header-primary {
     font-family: "DM Sans", sans-serif;
