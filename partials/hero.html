@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/hero.css" />
   </head>
   <body>
-    <section class="section hero">
+    <section class="hero">
       <div class="container container-hero">
         <h1 class="title-hero">
           fresh harvest box <br />
@@ -33,14 +33,40 @@
               <div class="hero-card-watermeloun hero-card">
                 <h2 class="visual-hidden">hero</h2>
                 <h3 class="title-card title-card-watermelon">Fruit</h3>
-                <img
-                  class="hero-card-img"
-                  src="../img/watermelon.jpg"
-                  srcset="../img/watermelon.jpg 1x, ../img/watermelon@2x.jpg 2x"
-                  width="239"
-                  height="172"
-                  alt="watermelon"
-                />
+                <picture class="hero-card-img">
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="
+                      ../img/desktopwatermelon.png    1x,
+                      ../img/desktopwatermelon@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ../img/tabletwatermelon.png    1x,
+                      ../img/tabletwatermelon@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width:375px)"
+                    srcset="
+                      ../img/mobilewatermelon.png    1x,
+                      ../img/mobilewatermelon@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    src="../img/desktopwatermelon.png"
+                    width="200"
+                    height="172"
+                    loading="lazy"
+                    alt="watermelon"
+                  />
+                </picture>
+
                 <p class="text-hero-card text-card-watermelon">
                   Refreshing and juicy, watermelon is the perfect summer treat
                   and a great source of hydration
@@ -52,17 +78,39 @@
             <div class="hero-wraper-second">
               <div class="hero-card-strawberry hero-card">
                 <h3 class="title-card title-card-strawberry">Fruit</h3>
-                <img
-                  class="hero-card-img"
-                  src="./img/hero/strawberry-card@1x.png"
-                  srcset="
-                    ./img/hero/strawberry-card@1x.png 1x,
-                    ./img/hero/strawberry-card@2x.png 2x
-                  "
-                  width="239"
-                  height="187"
-                  alt="strawberry in basket"
-                />
+                <picture class="hero-card-img">
+                  <source
+                    media="(min-width:1280px)"
+                    srcset="
+                      ../img/desktopstrawberry-basket.png    1x,
+                      ../img/desktopstrawberry-basket@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width:768px)"
+                    srcset="
+                      ../img/tabletstrawberry-basket.png    1x,
+                      ../img/tabletstrawberry-basket@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <source
+                    media="(min-width:375px)"
+                    srcset="
+                      ../img/mobilestrawberry-basket.png    1x,
+                      ../img/mobilestrawberry-basket@2x.png 2x
+                    "
+                    type="image/png"
+                  />
+                  <img
+                    src="../img/desktopstrawberry-basket.png"
+                    width="162"
+                    height="185"
+                    loading="lazy"
+                    alt="strawberry-basket"
+                  />
+                </picture>
                 <p class="text-hero-card text-card-strawberry">
                   Sweet and juicy, strawberries are packed with vitamin C and
                   antioxidants, making them a delicious and healthy snack

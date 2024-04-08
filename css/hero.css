@@ -8,10 +8,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -23,24 +19,18 @@ a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
-}
-
-img {
+source {
   display: block;
 }
 body {
   box-sizing: border-box;
-
   font-family: "DM Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   background-color: #ae1332;
 }
 .container {
-  padding: 0 20px;
   margin: 0px auto;
 }
 
@@ -52,72 +42,57 @@ body {
 
 @media screen and (min-width: 375px) {
   .container {
-    width: 375px;
+    max-width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
     padding: 0 32px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
-  }
-}
-
-.section {
-  padding-top: 80px;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 144px;
-  }
-}
-
-@media screen and (min-width: 1280px) {
-  .section {
-    padding-top: 150px;
+    max-width: 1280px;
   }
 }
 
 .hero {
   position: relative;
-  padding-top: 106px;
+  padding-top: 56px;
 }
 
 @media only screen and (min-width: 768px) {
   .hero {
-    padding-top: 114px;
+    padding-top: 64px;
   }
 }
 
 .container-hero {
-  background-image: url(../img/hero/strawberry-hero@1x.png),
-    url(../img/hero/banana-hero@1x.png);
+  background-image: url(../img/mobilestrawberries.png),
+    url(../img/mobilebananas.png);
   background-repeat: no-repeat;
-  background-position: top 0 right 15px, top 60px left 11px;
+  background-size: 56px 56px, 66px 44px;
+  background-position: top 0 right 20px, top 60px left 7px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .container-hero {
-    background-image: url(../img/hero/strawberry-hero@2x.png),
-      url(../img/hero/banana-hero@2x.png);
-    background-size: 16%, 23%;
+    background-image: url(../img/mobilestrawberries@2x.png),
+      url(../img/mobilebananas@2x.png);
   }
 }
 
 @media only screen and (min-width: 768px) {
   .container-hero {
-    background-image: url(../img/hero/strawberry-hero-tablet@1x.png),
-      url(../img/hero/banana-hero-tablet@1x.png);
-    background-position: top 0 right 37px, top 103px left 11px;
+    background-image: url(../img/tabletstrawberries.png),
+      url(../img/tabletbananas.png);
+    background-size: 108px 108px, 132px 90px;
+    background-position: top 0 right 37px, top 105px left 27px;
   }
 }
 
@@ -126,18 +101,18 @@ body {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .container-hero {
-      background-image: url(../img/hero/strawberry-hero-tablet@2x.png),
-        url(../img/hero/banana-hero-tablet@2x.png);
+      background-image: url(../img/tabletstrawberries@2x.png),
+        url(../img/tabletbananas@2x.png);
     }
   }
 }
 
 @media only screen and (min-width: 1280px) {
   .container-hero {
-    background-image: url(../img/hero/strawberry-hero-desc@1x.png),
-      url(../img/hero/banana-hero-desc@1x.png);
-    background-size: 12%, 15%;
-    background-position: top 0 right 200px, top 136px left 213px;
+    background-image: url(../img/desktopstrawberries.png),
+      url(../img/desktopbananas.png);
+    background-size: 120px 120px, 183px 125px;
+    background-position: top -25px right 223px, top 127px left 213px;
   }
 }
 
@@ -146,23 +121,22 @@ body {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .container-hero {
-      background-image: url(../img/hero/strawberry-hero-desc@2x.png),
-        url(../img/hero/banana-hero-desc@2x.png);
+      background-image: url(../img/desktopstrawberries@2x.png),
+        url(../img/desktopbananas@2x.png);
     }
   }
 }
 
 .button-shopnow::after {
   content: "";
-  background-image: url(../img/hero/hero-bg-mobile@1x.png);
-  width: 335px;
-  height: 509px;
+  background-image: url(../img/mobileyoung.png);
+  width: 311px;
+  height: 484px;
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
-
   position: absolute;
-  bottom: 27px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
@@ -172,24 +146,24 @@ body {
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .button-shopnow::after {
-    background-image: url(../img/hero/hero-bg-mobile@2x.png);
+    background-image: url(../img/mobileyoung@2x.png);
   }
 }
 
 @media only screen and (max-width: 334px) {
   .button-shopnow::after {
-    background-image: url(../img/hero/hero-bg-mobile@1x.png);
+    background-image: url(../img/mobileyoung.png);
     width: 100vw;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .button-shopnow::after {
-    background-image: url(../img/hero/hero-bg-tablet@1x.png);
-    width: 486px;
-    height: 742px;
+    background-image: url(../img/tabletyoung.png);
+    width: 452px;
+    height: 702px;
 
-    bottom: 15px;
+    bottom: 70px;
   }
 }
 
@@ -198,11 +172,29 @@ body {
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     .button-shopnow::after {
-      background-image: url(../img/hero/hero-bg-tablet@2x.png);
+      background-image: url(../img/tabletyoung@2x.png);
     }
   }
 }
+@media only screen and (min-width: 1280px) {
+  .button-shopnow::after {
+    background-image: url(../img/desktopyoung.png);
+    width: 452px;
+    height: 702px;
 
+    bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .button-shopnow::after {
+      background-image: url(../img/desktopyoung@2x.png);
+    }
+  }
+}
 .title-hero {
   margin-bottom: 386px;
 
