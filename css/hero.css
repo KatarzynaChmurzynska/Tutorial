@@ -224,6 +224,31 @@ body {
   }
 }
 
+/* .vector {
+  position: absolute;
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+@media only screen and (min-width: 768px) {
+  .vector {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .vector {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+} */
 @media only screen and (max-width: 334px) {
   .button-shopnow::after {
     background-image: url(../img/mobileyoung.png);
@@ -249,6 +274,16 @@ body {
     }
   }
 }
+@media only screen and (min-width: 768px) {
+  .vector {
+    position: absolute;
+    bottom: 26px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+}
+
 @media only screen and (min-width: 1280px) {
   .button-shopnow::after {
     background-image: url(../img/desktopyoung.png);
