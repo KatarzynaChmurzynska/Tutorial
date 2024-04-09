@@ -379,10 +379,14 @@ body {
   .right-block-card {
     order: 0;
     display: flex;
-    justify-content: flex-end;
+    align-self: start;
   }
 }
-
+@media only screen and (min-width: 1280px) {
+  .right-block-card {
+    align-self: end;
+  }
+}
 .hero-card {
   text-align: center;
 }
@@ -458,7 +462,8 @@ body {
 }
 
 .text-card-strawberry {
-  max-width: 172px;
+  padding-top: 15px;
+  max-width: 180px;
 }
 
 .title-item {
