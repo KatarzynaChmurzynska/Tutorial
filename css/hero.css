@@ -67,7 +67,6 @@ body {
     url(../img/mobilebananas.png);
   background-repeat: no-repeat;
   background-size: 56px 56px, 66px 44px;
-  background-position: top 56px right 0px, top 116px left -7px;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2),
